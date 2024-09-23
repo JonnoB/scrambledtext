@@ -32,6 +32,9 @@ TO DO
 
 # Usage
 
+There are two main ways to use the library, generating the corruption tables or corrupting text. See below for examples
+
+
 ## Calculating Probability Distributions
 
 ```
