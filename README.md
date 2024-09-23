@@ -15,9 +15,15 @@ The library uses character-aligned parallel texts to create the conditional 1-gr
 - **Insert**: A new character is inserted after the character currently passing through the process. The new character has a probability distribution specific to the character in the process. If that character is not present in the conditional probability table, the mean transmission probability for the training set is used
 - **Delete**: The character is deleted
 
+A diagram of the Markov process/network is shown below
+
+![corruption_network](https://github.com/user-attachments/assets/257d6e57-08dd-447d-8fd9-c86b7a2cde8f)
+
+
 The transmission probabilities are learnt from line-aligned text. A valuable library for creating line-aligned text is [genelog](https://github.com/microsoft/genalog). Although `scrambledtext` was developed for English, the library is language and script agnostic, as the functions are a general Markov process that acts as a simple simulator for the kind of errors observed in OCR.
 
 The library was developed for the paper "Scrambled text: training Language Models to correct OCR errors using synthetic data", The code for this paper can be found at [scrambledtext_analysis](https://github.com/JonnoB/scrambledtext_analysis) and [training_lms_with_synthetic_data](https://github.com/JonnoB/training_lms_with_synthetic_data)
+
 
 # Features
 
