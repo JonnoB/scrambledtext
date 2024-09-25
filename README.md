@@ -33,15 +33,16 @@ The library was developed for the paper "Scrambled text: training Language Model
 - Save and load probability distributions to/from JSON files
 
 # Installation
+The library is not available on PyPi but can be installed directly from github using
 
-TO DO
+`python -m pip install git+https://github.com/JonnoB/scrambledtext`
 
 # Usage
 
 There are two main ways to use the library, generating the corruption tables or corrupting text. See below for examples
 
 
-## Calculating Probability Distributions
+## Calculating Corruption Probabilities
 
 ```
 # Prepare aligned text pairs (ground truth and noisy text)
@@ -98,6 +99,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 If this repo is helpful in your own work, please cite xxx paper still in progress. No citation information yet xxx
 
 # To Do
-- make actual libarary
-- install instructions
 - Create aligned demo text
