@@ -6,7 +6,7 @@ A Python library for creating synthetic corrupted OCR text using a Markov proces
 
 The `scrambledtext` library provides tools to simulate OCR (Optical Character Recognition) errors in text by applying various types of corruptions such as character substitutions, deletions, and insertions. It uses probability distributions derived from aligned text pairs to generate realistic OCR-like errors. It is simple, containing only a handful of functions and classes, and is dependent only on libraries that come with the base installation of Python.
 
-The library was developed for the paper "Scrambled text: training Language Models to correct OCR errors using synthetic data" The code for this paper can be found at [scrambledtext_analysis](https://github.com/JonnoB/scrambledtext_analysis) and [training_lms_with_synthetic_data](https://github.com/JonnoB/training_lms_with_synthetic_data)
+The library was developed for the paper "[Scrambled text: training Language Models to correct OCR errors using synthetic data](https://arxiv.org/abs/2409.19735)" The code for this paper can be found at [scrambledtext_analysis](https://github.com/JonnoB/scrambledtext_analysis) and [training_lms_with_synthetic_data](https://github.com/JonnoB/training_lms_with_synthetic_data)
 
 The library uses character-aligned parallel texts to create the conditional 1-gram transmission distributions for a Markov process. The created character transfer probabilities are 
 
@@ -21,9 +21,6 @@ A diagram of the Markov process/network is shown below
 
 
 The transmission probabilities are learnt from line-aligned text. A valuable library for creating line-aligned text is [genelog](https://github.com/microsoft/genalog). Although `scrambledtext` was developed for English, the library is language and script agnostic, as the functions are a general Markov process that acts as a simple simulator for the kind of errors observed in OCR.
-
-The library was developed for the paper "Scrambled text: training Language Models to correct OCR errors using synthetic data", The code for this paper can be found at [scrambledtext_analysis](https://github.com/JonnoB/scrambledtext_analysis) and [training_lms_with_synthetic_data](https://github.com/JonnoB/training_lms_with_synthetic_data)
-
 
 # Features
 
@@ -96,7 +93,10 @@ print(f"Effective CER: {effective_cer:.2f}")
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 # Citing this repo
-If this repo is helpful in your own work, please cite xxx paper still in progress. No citation information yet xxx
+
+If this repo is helpful in your work, please cite the Arxiv pre-print
+
+Scrambled text: training Language Models to correct OCR errors using synthetic data: https://arxiv.org/abs/2409.19735
 
 # To Do
 - Create aligned demo text
