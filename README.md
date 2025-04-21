@@ -94,9 +94,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 # Citing this repo
 
-If this repo is helpful in your work, please cite the Arxiv pre-print
+If this repo is helpful in your work, please cite the article published in the International Journal on Document Analysis and Recognition (IJDAR).
 
-Scrambled text: training Language Models to correct OCR errors using synthetic data: https://arxiv.org/abs/2409.19735
+Scrambled text: training Language Models to correct OCR errors using synthetic data: https://doi.org/10.1007/s10032-025-00522-0
 
 # To Do
 - Create aligned demo text
